@@ -1,5 +1,6 @@
 # Class files
 *.class
+*.lst
 
 # Logs
 *.log
@@ -11,6 +12,7 @@
 /bin/
 /build/
 /out/
+/maven*/
 
 # IDE files
 .idea/
