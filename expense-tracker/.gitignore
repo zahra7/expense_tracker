@@ -1,0 +1,19 @@
+# Class files
+*.class
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Build directories
+/bin/
+/build/
+/out/
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project

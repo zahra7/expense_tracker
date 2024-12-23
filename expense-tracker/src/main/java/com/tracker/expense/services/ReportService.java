@@ -9,5 +9,6 @@ public class ReportService {
     }
 
     public List<Expense> getExpensesByDate(String date) {
+        return null;
     }
 }
