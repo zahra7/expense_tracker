@@ -5,6 +5,7 @@ public class Budget {
     private String month;
     private float amount;
     private Category category;
+    
     public Budget(Long id, String month, float amount, Category category) {
         this.id = id;
         this.month = month;

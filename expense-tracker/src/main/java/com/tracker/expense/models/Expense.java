@@ -1,15 +1,15 @@
 package com.tracker.expense.models;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class Expense {
     private Long id;
-    private LocalDate expenseDate;
+    private Date expenseDate;
     private float amount;
     private String description;
     private Category category;
 
-    public Expense(Long id, LocalDate expenseDate, float amount, String description, Category category) {
+    public Expense(Long id, Date expenseDate, float amount, String description, Category category) {
         this.id = id;
         this.expenseDate = expenseDate;
         this.amount = amount;
@@ -25,11 +25,11 @@ public class Expense {
         this.id = id;
     }
 
-    public LocalDate getExpenseDate() {
+    public Date getExpenseDate() {
         return expenseDate;
     }
 
-    public void setExpenseDate(LocalDate expenseDate) {
+    public void setExpenseDate(Date expenseDate) {
         this.expenseDate = expenseDate;
     }
 
