@@ -4,13 +4,13 @@ public class Budget {
     private Long id;
     private String month;
     private float amount;
-    private Category category;
+    private long categoryId;
     
-    public Budget(Long id, String month, float amount, Category category) {
+    public Budget(Long id, String month, float amount, long categoryId) {
         this.id = id;
         this.month = month;
         this.amount = amount;
-        this.category = category;
+        this.categoryId = categoryId;
     }
     public Long getId() {
         return id;
@@ -30,10 +30,10 @@ public class Budget {
     public void setAmount(float amount) {
         this.amount = amount;
     }
-    public Category getCategory() {
-        return category;
+    public long getCategoryId() {
+        return categoryId;
     }
-    public void setCategory(Category category) {
-        this.category = category;
+    public void setCategory(long categoryId) {
+        this.categoryId = categoryId;
     }
 }

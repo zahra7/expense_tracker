@@ -1,20 +1,21 @@
 package com.tracker.expense.models;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Expense {
-    private Long id;
-    private Date expenseDate;
+    private long id;
+    private LocalDateTime expenseDate;
     private float amount;
     private String description;
-    private Category category;
+    private long categoryId;
+    private LocalDateTime createdAt;
 
-    public Expense(Long id, Date expenseDate, float amount, String description, Category category) {
-        this.id = id;
+    public Expense(LocalDateTime expenseDate, float amount, String description, long categoryId, LocalDateTime createdAt) {
         this.expenseDate = expenseDate;
         this.amount = amount;
         this.description = description;
-        this.category = category;
+        this.categoryId = categoryId;
+        this.createdAt = createdAt;
     }
 
     public Long getId() {
@@ -25,11 +26,11 @@ public class Expense {
         this.id = id;
     }
 
-    public Date getExpenseDate() {
+    public LocalDateTime getExpenseDate() {
         return expenseDate;
     }
 
-    public void setExpenseDate(Date expenseDate) {
+    public void setExpenseDate(LocalDateTime expenseDate) {
         this.expenseDate = expenseDate;
     }
 
@@ -37,8 +38,12 @@ public class Expense {
         return amount;
     }
 
-    public Category getCategory(){
-        return category;
+    public Long getCategoryId(){
+        return categoryId;
+    }
+
+    public LocalDateTime getCreatedAt(){
+        return createdAt;
     }
 
     public void setAmount(float amount) {
@@ -53,8 +58,12 @@ public class Expense {
         this.description = description;
     }
 
-    public void setCategory(Category category){
-        this.category = category;
+    public void setCategoryId(long categoryId){
+        this.categoryId = categoryId;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt){
+        this.createdAt = createdAt;
     }
     
 }
